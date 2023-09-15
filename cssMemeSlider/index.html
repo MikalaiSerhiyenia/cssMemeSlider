@@ -15,8 +15,12 @@
   <body>
     <div class="container">
       <div class="slider">
+        <input type="radio" name="meme" class="input" id="slide1" checked />
+        <input type="radio" name="meme" class="input" id="slide2" />
+        <input type="radio" name="meme" class="input" id="slide3" />
+        <input type="radio" name="meme" class="input" id="slide4" />
         <div class="slides">
-          <div class="slide fry">
+          <div class="slide fry-meme">
             <img src="./img/1.avif" alt="Futurama Meme" />
           </div>
           <div class="slide">
@@ -29,18 +33,26 @@
             <img src="./img/4.avif" alt="Futurama Meme" />
           </div>
         </div>
-        <div class="pagination">
-          <div class="inputs">
-            <input type="radio" name="meme" id="slide1" checked />
-            <input type="radio" name="meme" id="slide2" />
-            <input type="radio" name="meme" id="slide3" />
-            <input type="radio" name="meme" id="slide4" />
+        <div class="pag">
+          <div class="texts">
+            <p class="text fry">Philip J. Fry: "Shut up and take my money!"</p>
+            <p class="text leela">
+              Turanga Leela: "Not sure if I'm as funny as the Fry meme. Eye must
+              be lacking something..."
+            </p>
+            <p class="text prof">
+              Professor Hubert J. Farnsworth: "Good news, everyone!"
+            </p>
+            <p class="text zoid">
+              Dr. John A. Zoidberg: "Need another Futurama meme? Why not
+              Zoidberg?"
+            </p>
           </div>
           <div class="labels">
-            <label for="slide1" class="pag">Fry</label>
-            <label for="slide2" class="pag">Leela</label>
-            <label for="slide3" class="pag">Professor</label>
-            <label for="slide4" class="pag">Zoidberg</label>
+            <label for="slide1" class="label first"></label>
+            <label for="slide2" class="label second"></label>
+            <label for="slide3" class="label third"></label>
+            <label for="slide4" class="label fourth"></label>
           </div>
         </div>
       </div>
