@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    background-color: inherit;
+    margin: .5em auto;
+}
+
+.slider {
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: .1em solid grey;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all .5s linear;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.input {
+    display: none;
+}
+
+.pag {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
+.texts {
+    display: flex;
+    margin: 1.2em;
+    flex-basis: 75%;
+}
+
+.text {
+    content: none;
+    transition: content .5s ease;
+}
+
+.labels {
+    display: flex;
+    margin: 1.2em;
+}
+
+.label {
+    cursor: pointer;
+    border-radius: 50%;
+    width: .8em;
+    height: .8em;
+    background-color: rgb(89, 132, 212);
+    border: none;
+    transition: all .5s linear;
+    margin: 0.3em;
+}
+
+#slide1:checked~.slides>.fry-meme {
+    margin-left: 0;
+}
+
+#slide1:checked~.pag>.labels>.first {
+    border: .1em solid rgb(89, 132, 212);
+    background-color: inherit;
+}
+
+#slide1:hover~.pag>.labels>.label-wrap>.first {
+    border: none;
+    background-color: white;
+}
+
+#slide1:checked:hover~.pag>.labels>.first {
+    border: .1em solid white;
+    background-color: inherit;
+}
+
+#slide1:checked~.pag>.texts>.text::after {
+    content: 'Philip J. Fry: "Shut up and take my money!"';
+}
+
+#slide2:checked~.slides>.fry-meme {
+    margin-left: -25%;
+}
+
+#slide2:checked~.pag>.labels>.second {
+    border: .1em solid rgb(89, 132, 212);
+    background-color: inherit;
+}
+
+#slide2:hover~.pag>.labels>.second {
+    border: none;
+    background-color: white;
+}
+
+#slide2:checked:hover~.pag>.labels>.second {
+    border: .1em solid white;
+    background-color: inherit;
+}
+
+#slide2:checked~.pag>.texts>.text::after {
+    content: "Turanga Leela: 'Not sure if I' m as funny as the Fry meme. Eye must be lacking something...'";
+}
+
+#slide3:checked~.slides>.fry-meme {
+    margin-left: -50%;
+}
+
+#slide3:checked~.pag>.labels>.third {
+    border: .1em solid rgb(89, 132, 212);
+    background-color: inherit;
+}
+
+#slide3:hover~.pag>.labels>.third {
+    border: none;
+    background-color: white;
+}
+
+#slide3:checked:hover~.pag>.labels>.third {
+    border: .1em solid white;
+    background-color: inherit;
+}
+
+#slide3:checked~.pag>.texts>.text::after {
+    content: 'Professor Hubert J. Farnsworth: "Good news, everyone!"';
+}
+
+#slide4:checked~.slides>.fry-meme {
+    margin-left: -75%;
+}
+
+#slide4:checked~.pag>.labels>.fourth {
+    border: .1em solid rgb(89, 132, 212);
+    background-color: inherit;
+}
+
+#slide4:hover~.pag>.labels>.fourth {
+    border: none;
+    background-color: white;
+}
+
+#slide4:checked:hover~.pag>.labels>.fourth {
+    border: .1em solid white;
+    background-color: inherit;
+}
+
+#slide4:checked~.pag>.texts>.text::after {
+    content: 'Dr. John A. Zoidberg: "Need another Futurama meme? Why not Zoidberg?"';
+}
+
+@media (max-width: 1023px) {
+    .pag {
+        flex-direction: column-reverse;
+    }
+
+    .labels {
+        align-self: center;
+    }
+
+    .texts {
+        margin-top: 0;
+    }
+}

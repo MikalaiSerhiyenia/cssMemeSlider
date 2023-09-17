@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <title>CSS Meme Slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <input type="radio" name="meme" class="input" id="slide1" checked />
+        <input type="radio" name="meme" class="input" id="slide2" />
+        <input type="radio" name="meme" class="input" id="slide3" />
+        <input type="radio" name="meme" class="input" id="slide4" />
+        <div class="slides">
+          <div class="slide fry-meme">
+            <img src="./img/1.avif" alt="Futurama Meme" />
+          </div>
+          <div class="slide">
+            <img src="./img/2.avif" alt="Futurama Meme" />
+          </div>
+          <div class="slide">
+            <img src="./img/3.avif" alt="Futurama Meme" />
+          </div>
+          <div class="slide">
+            <img src="./img/4.avif" alt="Futurama Meme" />
+          </div>
+        </div>
+        <div class="pag">
+          <div class="texts">
+            <p class="text"></p>
+          </div>
+          <div class="labels">
+            <label for="slide1" class="label first"></label>
+            <label for="slide2" class="label second"></label>
+            <label for="slide3" class="label third"></label>
+            <label for="slide4" class="label fourth"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
